@@ -1,0 +1,43 @@
+
+section.movie{
+  height: 100vh;
+  height: 100dvh;
+  background-color: black;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .debug{
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    font-size: 30;
+    display: none;
+  }
+  .player-wrap iframe{
+    position:absolute;
+    top: 0;
+    right:0;
+    width:100%;
+    height:100%;
+  }
+
+  .cover{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+
+  }
+  .cover.off-hours{
+    background-color: rgba(0,0,0,0.8);
+    width: 100%;
+    height: 100%;
+  }
+
+
+}

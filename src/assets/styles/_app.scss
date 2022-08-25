@@ -1,0 +1,17 @@
+@import 'normalize.css';
+
+/*
+  Base
+*/
+@import './base/fonts';
+
+/*
+  Utils
+*/
+@import './utils/mixins';
+
+/*
+  Components
+*/
+@import './components/footer';
+@import './components/player';
