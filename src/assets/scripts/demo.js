@@ -11,20 +11,26 @@ const changeTime = 10 * 60 * 1000; // min * sec * msec
 const closedTime = 0;
 const openedTime = 8;
 const videoList = [
-  '7H-6gBSAu4o', // レヴンワース
-  '1-iS7LArMPA', // タイムズスクエア
-  'S1nmRcAklH0', // ジョージ・ワシントン・ブリッジ
-  'b8Z0CuNwai8', // ラスベガス
+  // アメリカ標準時: https://www.time-j.net/WorldTime/Country/US
+  'b8Z0CuNwai8', // ラスベガス(UTC-8)
+  '7H-6gBSAu4o', // レヴンワース(カンザス州 UTC-7)
+  'aTyNZQHRZ7Q', // ジャクソンホールの服屋 (ワイオミング州 UTC-7) //https://www.youtube.com/c/Seejh
   // 'srlpC5tmhYs', // NYの広場 (あまりおもしろくないので非公開)
-  '2wqpy036z24', // ヴァージン諸島のバー
-  '-eqdD8qKBbM', // ディアフィールドビーチ US フロリダ州
+  'S1nmRcAklH0', // ジョージ・ワシントン・ブリッジ(UTC-5 NY)
+  '1-iS7LArMPA', // タイムズスクエア(UTC-5 NY)
+  '-eqdD8qKBbM', // ディアフィールドビーチ US フロリダ州 (UTC-5)
   // 'dft7XTlPdA4', // フロリダの水中 (現在緑一色になってた)
-  'EprUcPFSXkg', // アメリカオーランド州の海沿いのバー
-  '7i8ARjIeM2k', // マイアミの水中
+  '06-9leYioUI', // アメリカオーランド州の海沿いのバー (UTC-5 オーランド州)
+  '7i8ARjIeM2k', // マイアミの水中 (UTC-5 マイアミ)
+  '2wqpy036z24', // ヴァージン諸島のバー(UTC-4)
   'St7aTfoIdYQ', // オックスフォードの学校
   'yMSc-qqW3To', //The Geiranger-Hellesylt Ferryは、ノルウェーのMøreog Romsdal郡のStranda市にあるGeirangerとHellesylt間のフェリーサービスです。
   // 'KPK_kphkMvE', // アインベック,ドイツ(utc1) deleted
   // '8Ldc9EeXpW8', // オランダ(utc1) deleted
+  'utFHRDryJL0', // デンマーク(utc1) https://www.youtube.com/channel/UCRPhYF9rd5ov7DNKj99MNIg
+  '9N9OmvwRAF8', // オランダ エグモンドアーンジー
+  'UWZNkLXKDpo', // オランダ エルブルグ https://www.youtube.com/watch?v=UWZNkLXKDpo
+  // 'oTUOTTdqi7I', // オランダ(utc1) アムステルダム https://www.youtube.com/c/AmsterdamLive
   'qwjt-gnItvg', // オーストリア チロル州シュヴァーツ地区シュトゥンマーベルク
   'HpZAez2oYsA', // ヴェネチ
   'dHSRBMgTBvc', // マナローラ・マリーナ(イタリア)
@@ -35,21 +41,21 @@ const videoList = [
   'ydYDqZQpim8', // ナミブ
   'h1wly909BYw', // サンクトペテルブルク
   // 'ssSK5SuimH4', // トルコ,トカット deleted
-  'cTBn7b1WuZw', // トルコ, ordu
-  'BGCytWLOmyA', // ブルガリア
+  'zv4T-KA63-E', // トルコ, ordu https://www.youtube.com/c/YakanetWisp
+  'A_Aknujc8_E', // ブルガリア https://www.youtube.com/c/Free1video
   // '85QS7jJuwKU', // タイのセブン deleted
   // 'ZCiK4_BMzxk', // タイ,  The Shack | Fisherman's Village | Koh Samui |
-  'WZybiJw_0Os', // タイ,  Thong Sala center, Koh Phangan
+  '0EaQuajibHU', // タイ,  Thong Sala center, Koh Phangan https://www.youtube.com/c/Teleportcamera
   'tBSxKeql2Fk', // タイの動物園？
   'gp69xjCxau0', // ロシア,イルクーツクの滑り台
-  '-I6qbjZk0HM', // フィリピン
+  '-I6qbjZk0HM', // フィリピン // https://www.youtube.com/c/JazBazPhilippines
   'KFpOsiMkMiU', // フィリピンの道2
   '-JhoMGoAfFc', // 韓国の橋
   'lsxYH2XQQCg', // モンキーセンター
   '9GPMcqWhgKA', // 草津温泉
   // 'EHkMjfMw7oU', // 歌舞伎町
-  'RX_NCBuV_Z0', // 渋谷スクランブル交差点
-  'oD6ywmB6NIs', // オーストラリアのコアラ動物園 ローンパイン・コアラ・サンクチュアリ(utc10)
+  '3-jHG_SnsEk', // 渋谷スクランブル交差点 // https://www.youtube.com/user/FNNnewsCH
+  'oD6ywmB6NIs', // オーストラリアのコアラ動物園 ローンパイン・コアラ・サンクチュアリ(utc10) // https://www.youtube.com/c/lonepinekoala
   '86YLFOog4GM', // ISS
 ]
 
