@@ -12,11 +12,11 @@ const closedTime = 0;
 const openedTime = 8;
 const videoList = [
   // アメリカ標準時: https://www.time-j.net/WorldTime/Country/US
-  'b8Z0CuNwai8', // ラスベガス(UTC-8)
+  'KUfZdPnDOaQ', // ラスベガス(UTC-8)
   '7H-6gBSAu4o', // レヴンワース(カンザス州 UTC-7)
   'aTyNZQHRZ7Q', // ジャクソンホールの服屋 (ワイオミング州 UTC-7) //https://www.youtube.com/c/Seejh
   // 'srlpC5tmhYs', // NYの広場 (あまりおもしろくないので非公開)
-  'S1nmRcAklH0', // ジョージ・ワシントン・ブリッジ(UTC-5 NY)
+  // 'S1nmRcAklH0', // ジョージ・ワシントン・ブリッジ(UTC-5 NY) // 非公開？ https://www.youtube.com/c/FortLeeOnDemand/videos
   '1-iS7LArMPA', // タイムズスクエア(UTC-5 NY)
   '-eqdD8qKBbM', // ディアフィールドビーチ US フロリダ州 (UTC-5)
   // 'dft7XTlPdA4', // フロリダの水中 (現在緑一色になってた)
@@ -28,7 +28,7 @@ const videoList = [
   // 'KPK_kphkMvE', // アインベック,ドイツ(utc1) deleted
   // '8Ldc9EeXpW8', // オランダ(utc1) deleted
   'utFHRDryJL0', // デンマーク(utc1) https://www.youtube.com/channel/UCRPhYF9rd5ov7DNKj99MNIg
-  '9N9OmvwRAF8', // オランダ エグモンドアーンジー
+  'V6nnNhx_HV8', // オランダ // https://www.youtube.com/c/SocialHotspot
   'UWZNkLXKDpo', // オランダ エルブルグ https://www.youtube.com/watch?v=UWZNkLXKDpo
   // 'oTUOTTdqi7I', // オランダ(utc1) アムステルダム https://www.youtube.com/c/AmsterdamLive
   'qwjt-gnItvg', // オーストリア チロル州シュヴァーツ地区シュトゥンマーベルク
@@ -39,6 +39,7 @@ const videoList = [
   // '4zLHD1WY6ps', // ケープタウンのビーチ
   'v-wwr4XH9G4', // エルサレム
   'ydYDqZQpim8', // ナミブ
+  // 'gzbmXwF2_tQ', // ナミブ２ https://www.youtube.com/channel/UCfn4vrrgKXCCg3rxxLRGOvg
   'h1wly909BYw', // サンクトペテルブルク
   // 'ssSK5SuimH4', // トルコ,トカット deleted
   'zv4T-KA63-E', // トルコ, ordu https://www.youtube.com/c/YakanetWisp
@@ -55,6 +56,7 @@ const videoList = [
   '9GPMcqWhgKA', // 草津温泉
   // 'EHkMjfMw7oU', // 歌舞伎町
   '3-jHG_SnsEk', // 渋谷スクランブル交差点 // https://www.youtube.com/user/FNNnewsCH
+  'MtG3qakph4w', // オーストラリア チャールズ・スタート大学の鳥
   'oD6ywmB6NIs', // オーストラリアのコアラ動物園 ローンパイン・コアラ・サンクチュアリ(utc10) // https://www.youtube.com/c/lonepinekoala
   '86YLFOog4GM', // ISS
 ]
