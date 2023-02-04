@@ -12,53 +12,56 @@ const closedTime = 0;
 const openedTime = 8;
 const videoList = [
   // アメリカ標準時: https://www.time-j.net/WorldTime/Country/US
-  'KUfZdPnDOaQ', // ラスベガス(UTC-8)
+  '3XoeAR3OThc', // ラスベガス(UTC-8)
+  'cJzYyUpf2mg', // flagstaff (UTC-7) https://www.youtube.com/@VirtualRailfan
   '7H-6gBSAu4o', // レヴンワース(カンザス州 UTC-7)
-  'aTyNZQHRZ7Q', // ジャクソンホールの服屋 (ワイオミング州 UTC-7) //https://www.youtube.com/c/Seejh
+  // 'aTyNZQHRZ7Q', // ジャクソンホールの服屋 (ワイオミング州 UTC-7) //https://www.youtube.com/c/Seejh
   // 'srlpC5tmhYs', // NYの広場 (あまりおもしろくないので非公開)
   // 'S1nmRcAklH0', // ジョージ・ワシントン・ブリッジ(UTC-5 NY) // 非公開？ https://www.youtube.com/c/FortLeeOnDemand/videos
   '1-iS7LArMPA', // タイムズスクエア(UTC-5 NY)
-  '-eqdD8qKBbM', // ディアフィールドビーチ US フロリダ州 (UTC-5)
+  'srlpC5tmhYs', // newyorkの公園 https://www.youtube.com/@BryantParkNYC
+  '-OrQPf3FEy4', // nycの服や https://www.youtube.com/@originaldpj
+  'JquwVoUJbt0', // 鹿　https://www.youtube.com/@BrownvillesFoodPantryForDeer
+  // '-eqdD8qKBbM', // ディアフィールドビーチ US フロリダ州 (UTC-5)
   // 'dft7XTlPdA4', // フロリダの水中 (現在緑一色になってた)
-  '06-9leYioUI', // アメリカオーランド州の海沿いのバー (UTC-5 オーランド州)
+  'JrJMPiLEefg', // アメリカオーランド州の海沿いのバー (UTC-5 オーランド州) https://www.youtube.com/@jonnytechnology2640
   '7i8ARjIeM2k', // マイアミの水中 (UTC-5 マイアミ)
-  '2wqpy036z24', // ヴァージン諸島のバー(UTC-4)
+  '2wqpy036z24', // ヴァージン諸島のバー(UTC-4) https://www.youtube.com/@GreatExpectationsSTJ
   'St7aTfoIdYQ', // オックスフォードの学校
   'yMSc-qqW3To', //The Geiranger-Hellesylt Ferryは、ノルウェーのMøreog Romsdal郡のStranda市にあるGeirangerとHellesylt間のフェリーサービスです。
   // 'KPK_kphkMvE', // アインベック,ドイツ(utc1) deleted
   // '8Ldc9EeXpW8', // オランダ(utc1) deleted
   'utFHRDryJL0', // デンマーク(utc1) https://www.youtube.com/channel/UCRPhYF9rd5ov7DNKj99MNIg
-  'V6nnNhx_HV8', // オランダ // https://www.youtube.com/c/SocialHotspot
+  'ekgF3k_i9jE', // オランダ // https://www.youtube.com/c/SocialHotspot
   'UWZNkLXKDpo', // オランダ エルブルグ https://www.youtube.com/watch?v=UWZNkLXKDpo
   // 'oTUOTTdqi7I', // オランダ(utc1) アムステルダム https://www.youtube.com/c/AmsterdamLive
   'qwjt-gnItvg', // オーストリア チロル州シュヴァーツ地区シュトゥンマーベルク
   'HpZAez2oYsA', // ヴェネチ
   'dHSRBMgTBvc', // マナローラ・マリーナ(イタリア)
   // 'c4kpeZHcke8', // ノルウェー
-  'IjSGWGt6xu8', //エグモンドアーンジーは、オランダの北ホラント州にある北海沿岸の村です
+  'BQaw7R6vUnw', //エグモンドアーンジーは、オランダの北ホラント州にある北海沿岸の村です https://www.youtube.com/@egmondaanzee
   // '4zLHD1WY6ps', // ケープタウンのビーチ
   'v-wwr4XH9G4', // エルサレム
   'ydYDqZQpim8', // ナミブ
   // 'gzbmXwF2_tQ', // ナミブ２ https://www.youtube.com/channel/UCfn4vrrgKXCCg3rxxLRGOvg
+  '-HxJYZI9AMk', // ケニア https://www.youtube.com/@Africamvideos
   'h1wly909BYw', // サンクトペテルブルク
   // 'ssSK5SuimH4', // トルコ,トカット deleted
-  'zv4T-KA63-E', // トルコ, ordu https://www.youtube.com/c/YakanetWisp
+  'wXRdW7Jy8_0', // トルコ, ordu https://www.youtube.com/c/YakanetWisp
   'A_Aknujc8_E', // ブルガリア https://www.youtube.com/c/Free1video
   // '85QS7jJuwKU', // タイのセブン deleted
   // 'ZCiK4_BMzxk', // タイ,  The Shack | Fisherman's Village | Koh Samui |
-  '0EaQuajibHU', // タイ,  Thong Sala center, Koh Phangan https://www.youtube.com/c/Teleportcamera
-  'tBSxKeql2Fk', // タイの動物園？
+  'HoHlSQoOWBk', // タイ,  Thong Sala center, Koh Phangan https://www.youtube.com/c/Teleportcamera
   'gp69xjCxau0', // ロシア,イルクーツクの滑り台
-  '-I6qbjZk0HM', // フィリピン // https://www.youtube.com/c/JazBazPhilippines
-  'KFpOsiMkMiU', // フィリピンの道2
+  '8oVQjO-0b7k', // フィリピン // https://www.youtube.com/c/JazBazPhilippines
+  'MPGNOavzqik', // フィリピンの道2
   '-JhoMGoAfFc', // 韓国の橋
   'lsxYH2XQQCg', // モンキーセンター
-  '9GPMcqWhgKA', // 草津温泉
+  'GrEEoEmmrKs', // 草津温泉
   // 'EHkMjfMw7oU', // 歌舞伎町
-  '3-jHG_SnsEk', // 渋谷スクランブル交差点 // https://www.youtube.com/user/FNNnewsCH
+  '75TyMXSXlTE', // 渋谷スクランブル交差点 // https://www.youtube.com/user/FNNnewsCH
   'MtG3qakph4w', // オーストラリア チャールズ・スタート大学の鳥
-  'oD6ywmB6NIs', // オーストラリアのコアラ動物園 ローンパイン・コアラ・サンクチュアリ(utc10) // https://www.youtube.com/c/lonepinekoala
-  '86YLFOog4GM', // ISS
+  // 'oD6ywmB6NIs', // オーストラリアのコアラ動物園 ローンパイン・コアラ・サンクチュアリ(utc10) // https://www.youtube.com/c/lonepinekoala
 ]
 
 const getVideoId = ()=>{
